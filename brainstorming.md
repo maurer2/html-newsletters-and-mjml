@@ -8,12 +8,12 @@
   * Gmail CSS rules change
 
 * Classic HTML mailing layouts
-  * Table layouts
+  * Table layouts (cellspacing, cellpadding, colspan, rowspan, border, bgcolor, align, valign)
   * Font tags
-  * Borders
-  * Usage of classic CSS layouting technique like float, Inline-block and table-cell
+  * Usage of classic CSS layout techniques (float, Inline-block and table-cell)
 
 * Hybrid layouts for responsive emails
+  * Inline CSS
   * Progressive enhancement
   * Media queries
   * SVG-support
@@ -22,6 +22,7 @@
 
 * Tools
   * CSS-Inliner
+  * Putsmail (now owned by Litmus)
 
 * Testing
   * Litmus Email
@@ -35,13 +36,12 @@
 
 * MJML
   * Benefits
-  * Milestones
   * Layout modules
   * Disadvantages
   * Integration with Mailchimp
 
 * Competitors 
-  * Zurb Ink
+  * Foundation for Emails 2 (formerly Zurb Ink)
   * Cerberus
   * Blueprints by Mailchimp (outdated)
   
