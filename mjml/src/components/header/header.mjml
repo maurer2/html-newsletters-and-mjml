@@ -1,0 +1,16 @@
+<mjml>
+  <mj-body>
+    <!-- container -->
+    <mj-section padding="0" background-color="#e3bab3">
+      <mj-column width="100px" padding="0" vertical-align="middle">
+        <mj-image width="150px" src="https://placekitten.com/150/150" padding="0" />
+      </mj-column>
+      <mj-column width="500px" vertical-align="middle">
+        <mj-text>
+          Cat
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- container -->
+  </mj-body>
+</mjml>
