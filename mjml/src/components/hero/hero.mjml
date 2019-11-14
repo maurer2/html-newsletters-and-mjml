@@ -11,7 +11,7 @@
       vertical-align="middle"
     >
       <mj-text padding="0" align="right" font-size="36px" font-weight="600" color="#6f859b">
-        Cat
+        <h1>Cat<h1>
       </mj-text>
     </mj-hero>
     <!-- container -->

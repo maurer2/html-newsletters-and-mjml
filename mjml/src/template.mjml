@@ -6,18 +6,7 @@
       
       <mj-include path="./components/hero/hero.mjml" />
 
-      <mj-section>
-        <mj-column>
-          <mj-text>
-            Okay
-          </mj-text>
-        </mj-column>
-        <mj-column>
-          <mj-text>
-            Hello
-          </mj-text>
-        </mj-column>
-      </mj-section>
+      <mj-include path="./components/media-objects/media-objects.mjml" />
     </mj-wrapper>
     <!-- container -->
   </mj-body>

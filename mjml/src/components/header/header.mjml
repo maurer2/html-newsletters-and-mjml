@@ -7,7 +7,7 @@
       </mj-column>
       <mj-column width="500px" vertical-align="middle">
         <mj-text>
-          Cat
+          <h2>Cat</h2>
         </mj-text>
       </mj-column>
     </mj-section>
