@@ -8,9 +8,11 @@
     "watch": "mjml --watch './src/template.mjml' --output './dist/template.html'",
     "validate": "mjml './src/template.mjml' --config.validationLevel",
     "open": "opener './dist/template.html'",
-    "open:server": "live-server ./ --open='./dist/template.html'"
+    "open:server": "live-server ./ --open='./dist/template.html'",
+    "test": "jest"
   },
   "dependencies": {
+    "@babel/preset-env": "^7.7.1",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^10.0.3",
@@ -20,6 +22,8 @@
     "eslint": "^6.1.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.7.0",
+    "fs-extra": "^8.1.0",
+    "jest": "^24.9.0",
     "live-server": "^1.2.1",
     "mjml": "^4.5.1",
     "opener": "^1.5.1",
