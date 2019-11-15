@@ -1,26 +1,12 @@
 {
   "name": "reveal.js",
   "version": "3.8.0",
-  "description": "The HTML Presentation Framework",
-  "homepage": "http://revealjs.com",
-  "subdomain": "revealjs",
   "main": "js/reveal.js",
   "scripts": {
     "test": "grunt test",
     "start": "grunt serve",
-    "build": "grunt"
-  },
-  "author": {
-    "name": "Hakim El Hattab",
-    "email": "hakim.elhattab@gmail.com",
-    "web": "http://hakim.se"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/hakimel/reveal.js.git"
-  },
-  "engines": {
-    "node": ">=9.0.0"
+    "build": "grunt",
+    "slides:start": "yarn start"
   },
   "devDependencies": {
     "express": "^4.16.2",
