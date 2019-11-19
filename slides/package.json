@@ -6,7 +6,7 @@
     "test": "grunt test",
     "start": "grunt serve",
     "build": "grunt",
-    "slides:start": "yarn start"
+    "export-to-pdf": ""
   },
   "devDependencies": {
     "express": "^4.16.2",
