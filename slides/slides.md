@@ -33,9 +33,59 @@
 ## Responsiveness
 * Making layout tables responsive
 
+## Common Email clients
+
+### Outlook (offline)
+* Since Outlook 2007 Word is used as render engine
+* Engine hasn't been updated since then
+* No support for background images
+* Support for margin, padding, width and height spotty (due to broken box model implementation)
+* No media queries or other modern CSS-features
+* Outlook for Mac uses Webkit
+
+### Outlook (web)
+* Didn't support CSS margins for a while
+* Background images don't repeat
+* Links need to be prefixed with protocol (HTTP/HTTPS)
+* Media queries support was supposed to be introduced in 2019
+* Can be targeted in CSS via `[owa] .test {}`
+
+
+### Gmail
+* Slight differences between browser-based Gmail, Android app and Gmail app for non-Google accounts
+* Messages larger than 1024kb are clipped
+* Support of embedded styles in the head since late 2016
+* No support for style-element in the body
+* Gmail ignores style-elements larger than 8192 characters
+* Gmail removes style-elements that contain any error
+* Numbers and URLS are automatically converted to links
+
+### Thunderbird
+
+
+### Apple Mail/iOS Mail
+
+## Statistics
+
+* 4 of 5 used email clients are either apple or google
+* Standalone Outlook much more popular than Outlook.com
+* https://www.kevinmandeville.com/blog/email-client-market-share-trends-2018
+
+
+---
+
+### AMP for Email
+
+---
+
 ## Tools
+
+---
+
+### CSS-Inliner
   * CSS-Inliner (Premailer, PutsMail, MailChimp Inliner)
-  * Sending tools (MailGun, SendGrid)
+
+### Sending tools (MailGun, SendGrid)
 
 ---
 
