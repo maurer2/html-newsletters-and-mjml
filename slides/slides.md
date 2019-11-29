@@ -111,4 +111,30 @@
 
 ---
 
+## MJML
+
+### Basics
+  * Framework for HTML Emails
+  * Uses `Mailjet Markup Language` DSL
+  * Tries to simplify and abstract HTML Email authoring
+  * Provided quality of live improvements like watch tasks and linter
+  * Comes with common modules/pattern like columns, hero images, social-sharing etc.
+  * Supports responsive email
+
+### Technical stuff
+  * Current version 4 is a complete rewrite in vanillaJS
+  * Version 3 was based on a heavily modified version of React
+  * Syntax plugins for common editors like VSCode, Atom and Webstorm (?)
+  * Can be integrated in a React app
+
+### Advantages
+  * Todo
+
+### Disadvantages
+  * Todo
+
+### MJML 2 HTML
+  * Todo
+
+
 ### AMP for Email
