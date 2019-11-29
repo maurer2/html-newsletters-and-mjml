@@ -160,12 +160,56 @@
 
 ### Disadvantages
   * Parameterized generation is not very straightforward (https://github.com/mjmlio/mjml/issues/451)
-  * Imposes certain restrictions in terms of email design (e.g only 4 columns etc.)
-  * Rigid markup
+  * Imposes certain restrictions/limitation on email design (4 columns in a section etc.)
+  * Rigid markup 
+  * Outdated guides and tips that reference MJMl version 3 can be confusing
 
 ---
 
-### MJML 2 HTML
-  * Todo
+### Hello MJML (source)
+```
+<mjml>
+  <mj-body background-color="red">
+    <mj-section>
+      <mj-column>
+        <mj-text>
+          Hello MJML
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
+```
+
+### Hello MJML (compiled output)
+  * https://mjml.io/try-it-live/ByWRcxkTB
 
 ---
+
+### Building blocks - Body
+```
+<mj-body>
+...
+</mj-body>
+```
+
+* Acts similar to body-element in HTML
+* Sets background color and max-width of email
+* Used to be called container in MJML 3
+
+---
+
+### Building blocks - Section
+```
+<mj-section>
+...
+</mj-section>
+```
+
+* Similar to rows in Bootstrap layouts
+
+---
+
+### Parameterize MJML templates
+https://github.com/mjmlio/mjml/issues/1630
+
