@@ -105,6 +105,20 @@
 
 ---
 
+### Frameworks & Templates
+  * MJML
+  * Foundation for Emails 2 (formerly Zurb Ink)
+  * Cerberus
+  * Blueprints by Mailchimp (outdated)
+
+---
+
+### Testing
+  * Litmus Email
+  * Email on Acid
+
+---
+
 ### Testing
   * Litmus Email
   * Email on Acid
@@ -113,28 +127,45 @@
 
 ## MJML
 
+---
+
 ### Basics
-  * Framework for HTML Emails
+  * Open source framework for HTML Emails
   * Uses `Mailjet Markup Language` DSL
   * Tries to simplify and abstract HTML Email authoring
-  * Provided quality of live improvements like watch tasks and linter
-  * Comes with common modules/pattern like columns, hero images, social-sharing etc.
+  * Provides quality of live improvements like watch tasks and linter
+  * Comes with common modules/components like columns, hero images, social-sharing etc.
+  * Supports creation of custom components
   * Supports responsive email
+
+---
 
 ### Technical stuff
   * Current version 4 is a complete rewrite in vanillaJS
   * Version 3 was based on a heavily modified version of React
   * Syntax plugins for common editors like VSCode, Atom and Webstorm (?)
+  * Is supported by module bundlers like Webpack and task runners like Gulp 
   * Can be integrated in a React app
+  * Can be run standalone via npx
+
+---
 
 ### Advantages
-  * Todo
+  * Abstracts most of the cross browser issues
+  * Gives errors about incorrect usage at compile time
+  * Allows splitting up into partials/components
+  * MJML DSL is fairly close to HTML
+
+---
 
 ### Disadvantages
-  * Todo
+  * Parameterized generation is not very straightforward (https://github.com/mjmlio/mjml/issues/451)
+  * Imposes certain restrictions in terms of email design (e.g only 4 columns etc.)
+  * Rigid markup
+
+---
 
 ### MJML 2 HTML
   * Todo
 
-
-### AMP for Email
+---
