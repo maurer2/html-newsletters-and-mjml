@@ -189,7 +189,7 @@
 ### Building blocks - Body
 ```
 <mj-body>
-...
+  ...
 </mj-body>
 ```
 
