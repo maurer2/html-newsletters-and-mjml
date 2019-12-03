@@ -202,14 +202,51 @@
 ### Building blocks - Section
 ```
 <mj-section>
-...
+  ...
 </mj-section>
 ```
 
-* Similar to rows in Bootstrap layouts
+* Similar to rows in grid systems like Bootstrap or Foundation
+* Cannot contain sections themselves
+* Multiple sibling sections are okay
 
 ---
 
+### Building blocks - Column
+```
+<mj-column>
+  ..
+</mj-column>
+```
+
+* Similar to columns in grid systems like Bootstrap or Foundation
+* Must be a direct child of a section
+* Cannot contain other columns or sections
+* Multiple sibling columns are okay
+* Fill up row by default, e.g. 1 column 100% width, 2 columns 50% width etc.
+* Columns become stacked on small viewports
+
+---
+
+### Creating a grid layout
+```
+...
+  <mj-section>
+    <mj-column>
+      Full-width column
+    </mj-column>
+  </mj-section>
+  <mj-section>
+    <mj-column>
+      Column 50%
+    </mj-column>
+    <mj-column>
+      Column 50%
+    </mj-column>
+  </mj-section>
+  </mj-body>
+</mjml>
+```
+
 ### Parameterize MJML templates
 https://github.com/mjmlio/mjml/issues/1630
-
