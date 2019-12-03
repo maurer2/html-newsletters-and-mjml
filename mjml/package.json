@@ -9,7 +9,8 @@
     "validate": "mjml './src/template.mjml' --config.validationLevel",
     "open": "opener './dist/template.html'",
     "open:server": "live-server ./ --open='./dist/template.html'",
-    "test": "jest"
+    "test": "jest",
+    "compile": "mjml -s -i"
   },
   "dependencies": {
     "@babel/preset-env": "^7.7.1",

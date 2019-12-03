@@ -2,11 +2,16 @@
   <mj-body background-color="#020201">
     <!-- container -->
     <mj-wrapper background-color="#6f859b" padding="0">
+      <!-- link tot full version -->
+      <mj-include path="./components/link-to-full-version/link-to-full-version.mjml" />
+      <!-- header -->
       <mj-include path="./components/header/header.mjml" />
-      
+      <!-- hero -->
       <mj-include path="./components/hero/hero.mjml" />
-
+      <!-- list stacking -->
       <mj-include path="./components/media-objects/media-objects.mjml" />
+      <!-- list -->
+      <mj-include path="./components/media-columns/media-columns.mjml" />
     </mj-wrapper>
     <!-- container -->
   </mj-body>
