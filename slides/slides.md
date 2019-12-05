@@ -244,9 +244,35 @@
       Column 50%
     </mj-column>
   </mj-section>
-  </mj-body>
-</mjml>
 ```
+
+### Styling elements - Inline styles
+```
+<mj-text color="red" font-size="16px">
+  Cat
+</mj-text>
+```
+* Not reusable 
+* Override global styles
+* Make changes more difficult
+
+### Styling elements - Global styles
+```
+<mj-attributes>
+  <mj-class name="font-size-base" font-size="20px" />
+  <mj-class name="color-primary" color="red" />
+</mj-attributes>
+
+<mj-text mj-class="font-size-base color-primary">
+  Cat
+</mj-text>
+```
+
+* Reusable 
+* Easily changeable
+* Get inlined during compilation
+
+---
 
 ### Parameterize MJML templates
 https://github.com/mjmlio/mjml/issues/1630

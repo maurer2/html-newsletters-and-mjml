@@ -4,7 +4,7 @@
     <mj-section padding="0">
       <mj-column>
         <mj-button href="#" width="100%" padding="5px"  background-color="red" color="white">
-          Click for full version
+          Click here for a full version
         </mj-button>
       </mj-column>
     </mj-section>
