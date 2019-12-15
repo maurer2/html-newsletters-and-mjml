@@ -2,7 +2,7 @@
   <mj-head>
     <mj-title>Ticketyboo</mj-title>
     <mj-preview>
-      Your ticket
+      Your tickets for ###NAMEOFSHOW###
     </mj-preview>
     <mj-attributes>
       <mj-text padding="0" />
@@ -11,19 +11,20 @@
       <mj-class name="font-large" font-size="18px" />
       <mj-class name="font-extra-large" font-size="22px" />
     </mj-attributes>
-    <mj-class name="blue" color="blue" />
   </mj-head>
   <mj-body background-color="#4e4096">
     <!-- container -->
     <mj-wrapper background-color="#ffffff" padding="0">
       <!-- link to full version -->
-      <mj-include path="./components2/link-to-full-version/link-to-full-version.mjml" />
+      <mj-include path="./components-ticket/link-to-full-version/link-to-full-version.mjml" />
       <!-- header -->
-      <mj-include path="./components2/header/header.mjml" />
+      <mj-include path="./components-ticket/header/header.mjml" />
       <!-- hero -->
-      <mj-include path="./components2/hero/hero.mjml" />
+      <mj-include path="./components-ticket/hero/hero.mjml" />
       <!-- main -->
-      <mj-include path="./components2/main/main.mjml" />
+      <mj-include path="./components-ticket/main/main.mjml" />
+      <!-- footer -->
+      <mj-include path="./components-ticket/footer/footer.mjml" />
     </mj-wrapper>
     <!-- container -->
   </mj-body>

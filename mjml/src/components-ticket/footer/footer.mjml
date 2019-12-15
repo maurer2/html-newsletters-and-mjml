@@ -1,0 +1,13 @@
+<mjml>
+  <mj-body>
+    <!-- container -->
+    <mj-section mj-class="padding" background-color="black">
+      <mj-column vertical-align="middle">
+        <mj-text mj-class="font-normal" color="#FFFFFF" align="center">
+          ###CURRENTYEAR### ###COMPANYNAME###
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <!-- container -->
+  </mj-body>
+</mjml>

@@ -37,6 +37,10 @@
           <tr style="border-bottom:1px solid #ecedee; text-align:left;">
             <td>Location:</td>
             <td>
+              ###NAMEOFLOCATION### <br>
+              ###NAMEOFSTREET### ###STREETNUMBER### <br>
+              ###ZIPCODE### ###NAMEOFCITY###
+              <br>
               ###LINKTOGOOGLEMAPS###
             </td>
           </tr>
@@ -57,7 +61,7 @@
           QR-Code
         </mj-text>
         <mj-image
-          width="189px"
+          width="147px"
           src="qr-code.png"
           padding="0"
           align="left"
