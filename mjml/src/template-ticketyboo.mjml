@@ -1,0 +1,17 @@
+<mjml>
+  <mj-head>
+    <mj-title>Ticketyboo</mj-title>
+  </mj-head>
+  <mj-body background-color="#4e4096">
+    <!-- container -->
+    <mj-wrapper background-color="#ffffff" padding="0">
+      <!-- link to full version -->
+      <mj-include path="./components2/link-to-full-version/link-to-full-version.mjml" />
+      <!-- header -->
+      <mj-include path="./components2/header/header.mjml" />
+      <!-- hero -->
+      <mj-include path="./components2/hero/hero.mjml" />
+    </mj-wrapper>
+    <!-- container -->
+  </mj-body>
+</mjml>

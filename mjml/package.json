@@ -3,14 +3,14 @@
   "private": true,
   "author": "Martin",
   "scripts": {
-    "build": "mjml './src/template.mjml' --output './dist/template.html'",
+    "build": "mjml './src/*.mjml' --output './dist/'",
     "build:open": "yarpm run build && yarpm run open",
-    "watch": "mjml --watch './src/template.mjml' --output './dist/template.html'",
+    "watch": "mjml --watch './src/*.mjml' --output './dist'",
     "validate": "mjml './src/template.mjml' --config.validationLevel",
     "open": "opener './dist/template.html'",
-    "open:server": "live-server ./ --open='./dist/template.html'",
+    "open:server": "live-server ./ --open='./dist/'",
     "test": "jest",
-    "compile": "mjml -s -i"
+    "compile": "mjml -stdout -i"
   },
   "dependencies": {
     "@babel/preset-env": "^7.7.1",

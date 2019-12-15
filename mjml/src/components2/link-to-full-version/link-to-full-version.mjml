@@ -1,0 +1,13 @@
+<mjml>
+  <mj-body>
+    <!-- container -->
+    <mj-section padding="0">
+      <mj-column>
+        <mj-button href="#" width="100%" padding="0px" border-radius="0" background-color="#5e50a6" color="white">
+          Open full version in browser
+        </mj-button>
+      </mj-column>
+    </mj-section>
+    <!-- container -->
+  </mj-body>
+</mjml>

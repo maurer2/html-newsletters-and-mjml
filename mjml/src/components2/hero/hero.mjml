@@ -1,0 +1,16 @@
+<mjml>
+  <mj-body>
+    <!-- container -->
+    <mj-hero
+      mode="fixed-height"
+      height="200px"
+      padding="0px"
+      background-width="600px"
+      background-height="200px"
+      background-url="hero.jpg"
+      background-position="center center"
+    >
+    </mj-hero>
+    <!-- container -->
+  </mj-body>
+</mjml>
