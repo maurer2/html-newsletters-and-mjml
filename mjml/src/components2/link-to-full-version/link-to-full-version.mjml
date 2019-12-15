@@ -3,7 +3,15 @@
     <!-- container -->
     <mj-section padding="0">
       <mj-column>
-        <mj-button href="#" width="100%" padding="0px" border-radius="0" background-color="#5e50a6" color="white">
+        <mj-button
+          href="#"
+          width="100%"
+          padding="0px"
+          border-radius="0"
+          background-color="#5e50a6"
+          color="white"
+          mj-class="font-normal"
+        >
           Open full version in browser
         </mj-button>
       </mj-column>

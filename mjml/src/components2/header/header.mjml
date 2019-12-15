@@ -5,10 +5,10 @@
       <mj-column vertical-align="middle">
         <mj-image
           width="250px"
-          padding="15px" 
           align="right"
           src="logo.png"
           fluid-on-mobile="true"
+          mj-class="padding"
         />
       </mj-column>
     </mj-section>

@@ -1,0 +1,45 @@
+<mjml>
+  <mj-body>
+    <!-- container -->
+    <mj-section full-width="full-width">
+      <!-- headline -->
+      <mj-column padding-bottom="0" mj-class="padding">
+        <mj-text mj-class="font-extra-large">
+          Your tickets for ###NAMEOFSHOW###
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section full-width="full-width" padding="0">
+      <mj-column mj-class="padding" padding-top="0">
+        <mj-table align="left" padding="0" line-height="40px" mj-class="font-normal">
+          <tr style="border-bottom:1px solid #ecedee;text-align:left;">
+            <td>Customer name:</td>
+            <td>###FIRSTNAME### ###LASTNAME###</td>
+          </tr>
+          <tr style="border-bottom:1px solid #ecedee;text-align:left;">
+            <td>Booking number:</td>
+            <td>###BOOKINGNUMBER###</td>
+          </tr>
+          <tr style="border-bottom:1px solid #ecedee;text-align:left;">
+            <td>Date:</td>
+            <td>###DATEOFSHOW###</td>
+          </tr>
+          <tr style="border-bottom:1px solid #ecedee;text-align:left;">
+            <td>Location:</td>
+            <td>
+              ###LINKTOGOOGLEMAPS###
+            </td>
+          </tr>
+          <tr style="border-bottom:1px solid #ecedee;text-align:left;">
+            <td>Seats:</td>
+            <td>
+              ###SEATNUMBERS###
+            </td>
+          </tr>
+        </mj-table>
+      </mj-column>
+    </mj-section>
+    <!-- container -->
+  </mj-body>
+</mjml>
