@@ -8,8 +8,8 @@
       <mj-text padding="0" />
       <mj-class name="padding" padding="20px" />
       <mj-class name="font-normal" font-size="14px" />
-      <mj-class name="font-large" font-size="16px" />
-      <mj-class name="font-extra-large" font-size="19px" />
+      <mj-class name="font-large" font-size="18px" />
+      <mj-class name="font-extra-large" font-size="22px" />
     </mj-attributes>
     <mj-class name="blue" color="blue" />
   </mj-head>
