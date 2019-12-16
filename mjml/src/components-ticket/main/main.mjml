@@ -39,8 +39,7 @@
             <td>
               ###NAMEOFLOCATION### <br>
               ###NAMEOFSTREET### ###STREETNUMBER### <br>
-              ###ZIPCODE### ###NAMEOFCITY###
-              <br>
+              ###ZIPCODE### ###NAMEOFCITY###<br>
               ###LINKTOGOOGLEMAPS###
             </td>
           </tr>

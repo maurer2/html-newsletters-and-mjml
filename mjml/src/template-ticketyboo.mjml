@@ -23,6 +23,8 @@
       <mj-include path="./components-ticket/hero/hero.mjml" />
       <!-- main -->
       <mj-include path="./components-ticket/main/main.mjml" />
+      <!-- related shows -->
+      <mj-include path="./components-ticket/related-shows/related-shows.mjml" />
       <!-- footer -->
       <mj-include path="./components-ticket/footer/footer.mjml" />
     </mj-wrapper>

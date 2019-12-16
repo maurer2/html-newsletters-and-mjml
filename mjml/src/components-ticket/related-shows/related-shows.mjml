@@ -1,0 +1,62 @@
+<mjml>
+  <mj-body>
+    <!-- container -->
+    <mj-section mj-class="padding">
+      <mj-column>
+        <mj-text mj-class="font-large" padding-bottom="0px">
+          Shows similar to ###NAMEOFSHOW###
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section mj-class="padding" padding-top="0px">
+      <mj-group>
+        <!-- column 1 -->
+        <mj-column>
+          <mj-image
+            width="166px"
+            src="https://via.placeholder.com/166x120"
+            padding="0"
+            align="left"
+            href=""
+            fluid-on-mobile="true"
+          />
+          <mj-text mj-class="font-normal" padding-top="10px" font-weight="bold">
+            ###NAMEOFSHOW1###
+          </mj-text>
+        </mj-column>
+        <!-- column 1 -->
+        <!-- column 2 -->
+        <mj-column>
+          <mj-image
+            width="166px"
+            src="https://via.placeholder.com/166x120"
+            padding="0"
+            align="left"
+            href=""
+            fluid-on-mobile="true"
+          />
+          <mj-text mj-class="font-normal" padding-top="10px" font-weight="bold">
+            ###NAMEOFSHOW2###
+          </mj-text>
+        </mj-column>
+        <!-- column 2 -->
+        <!-- column 3 -->
+        <mj-column>
+          <mj-image
+            width="166px"
+            src="https://via.placeholder.com/166x120"
+            padding="0"
+            align="left"
+            href=""
+            fluid-on-mobile="true"
+          />
+          <mj-text mj-class="font-normal" padding-top="10px" font-weight="bold">
+            ###NAMEOFSHOW3###
+          </mj-text>
+        </mj-column>
+        <!-- column 2 -->
+    </mj-section>
+    <!-- container -->
+  </mj-body>
+</mjml>
