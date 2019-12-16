@@ -14,8 +14,8 @@
         <!-- column 1 -->
         <mj-column>
           <mj-image
-            width="166px"
-            src="https://via.placeholder.com/166x120"
+            width="160px"
+            src="https://via.placeholder.com/165x120"
             padding="0"
             align="left"
             href=""
@@ -29,8 +29,8 @@
         <!-- column 2 -->
         <mj-column>
           <mj-image
-            width="166px"
-            src="https://via.placeholder.com/166x120"
+            width="160px"
+            src="https://via.placeholder.com/160x120"
             padding="0"
             align="left"
             href=""
@@ -44,8 +44,8 @@
         <!-- column 3 -->
         <mj-column>
           <mj-image
-            width="166px"
-            src="https://via.placeholder.com/166x120"
+            width="160px"
+            src="https://via.placeholder.com/160x120"
             padding="0"
             align="left"
             href=""
@@ -56,6 +56,7 @@
           </mj-text>
         </mj-column>
         <!-- column 2 -->
+      </mj-group>
     </mj-section>
     <!-- container -->
   </mj-body>
