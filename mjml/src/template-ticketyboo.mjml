@@ -25,6 +25,8 @@
       <mj-include path="./components-ticket/main/main.mjml" />
       <!-- related shows -->
       <mj-include path="./components-ticket/related-shows/related-shows.mjml" />
+      <!-- social-footer -->
+      <mj-include path="./components-ticket/social-footer/social-footer.mjml" />
       <!-- footer -->
       <mj-include path="./components-ticket/footer/footer.mjml" />
     </mj-wrapper>
