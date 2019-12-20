@@ -2,18 +2,20 @@
   <mj-body>
     <!-- container -->
     <mj-section mj-class="padding" background-color="#5e50a6">
-      <mj-column vertical-align="middle" padding="0" padding-right="5px">
-        <mj-text mj-class="font-large" color="#FFFFFF" align="right">
-          Follow us on: 
-        </mj-text>
-      </mj-column>
-      <mj-column vertical-align="middle" padding="0">
-        <mj-social icon-size="32px" mode="horizontal" align="left" padding="0" padding-left="5px">
-          <mj-social-element name="facebook" href=""></mj-social-element>
-          <mj-social-element name="twitter" href=""></mj-social-element>
-        </mj-social>
-      </mj-column>
-    </mj-section>
+      <mj-group>
+        <mj-column vertical-align="middle" padding="0" padding-right="5px">
+          <mj-text mj-class="font-large" color="#FFFFFF" align="right">
+            Follow us on: 
+          </mj-text>
+        </mj-column>
+        <mj-column vertical-align="middle" padding="0">
+          <mj-social icon-size="32px" mode="horizontal" align="left" padding="0" padding-left="5px">
+            <mj-social-element name="facebook" href=""></mj-social-element>
+            <mj-social-element name="twitter" href=""></mj-social-element>
+          </mj-social>
+        </mj-column>
+      </mj-section>
+    </mj-group>
     <!-- container -->
   </mj-body>
 </mjml>
