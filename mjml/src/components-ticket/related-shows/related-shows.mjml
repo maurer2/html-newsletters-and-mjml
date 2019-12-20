@@ -9,54 +9,49 @@
       </mj-column>
     </mj-section>
 
-    <mj-section mj-class="padding" padding-top="0px">
-      <mj-group>
-        <!-- column 1 -->
-        <mj-column>
-          <mj-image
-            width="160px"
-            src="https://via.placeholder.com/165x120"
-            padding="0"
-            align="left"
-            href=""
-            fluid-on-mobile="true"
-          />
-          <mj-text mj-class="font-normal" padding-top="10px" font-weight="bold">
-            ###NAMEOFSHOW1###
-          </mj-text>
-        </mj-column>
-        <!-- column 1 -->
-        <!-- column 2 -->
-        <mj-column>
-          <mj-image
-            width="160px"
-            src="https://via.placeholder.com/160x120"
-            padding="0"
-            align="left"
-            href=""
-            fluid-on-mobile="true"
-          />
-          <mj-text mj-class="font-normal" padding-top="10px" font-weight="bold">
-            ###NAMEOFSHOW2###
-          </mj-text>
-        </mj-column>
-        <!-- column 2 -->
-        <!-- column 3 -->
-        <mj-column>
-          <mj-image
-            width="160px"
-            src="https://via.placeholder.com/160x120"
-            padding="0"
-            align="left"
-            href=""
-            fluid-on-mobile="true"
-          />
-          <mj-text mj-class="font-normal" padding-top="10px" font-weight="bold">
-            ###NAMEOFSHOW3###
-          </mj-text>
-        </mj-column>
-        <!-- column 2 -->
-      </mj-group>
+    <mj-section padding-left="10px" padding-right="10px" padding-top="0" padding-bottom="20px">
+      <!-- column 1 -->
+      <mj-column padding="0" padding-left="10px" padding-right="10px">
+        <mj-image
+          src="https://via.placeholder.com/160x120"
+          padding="0"
+          align="left"
+          href=""
+          fluid-on-mobile="true"
+        />
+        <mj-text mj-class="font-normal" padding-top="10px" padding-bottom="10px" font-weight="bold">
+          ###NAMEOFSHOW1###
+        </mj-text>
+      </mj-column>
+      <!-- column 1 -->
+      <!-- column 2 -->
+      <mj-column padding="0" padding-left="10px" padding-right="10px">
+        <mj-image
+          src="https://via.placeholder.com/160x120"
+          padding="0"
+          align="left"
+          href=""
+          fluid-on-mobile="true"
+        />
+        <mj-text mj-class="font-normal" padding-top="10px" padding-bottom="10px" font-weight="bold">
+          ###NAMEOFSHOW2###
+        </mj-text>
+      </mj-column>
+      <!-- column 2 -->
+      <!-- column 3 -->
+      <mj-column padding="0" padding-left="10px" padding-right="10px">
+        <mj-image
+          src="https://via.placeholder.com/160x120"
+          padding="0"
+          align="left"
+          href=""
+          fluid-on-mobile="true"
+        />
+        <mj-text mj-class="font-normal" padding-top="10px" padding-bottom="10px" font-weight="bold">
+          ###NAMEOFSHOW3###
+        </mj-text>
+      </mj-column>
+      <!-- column 3 -->
     </mj-section>
     <!-- container -->
   </mj-body>
