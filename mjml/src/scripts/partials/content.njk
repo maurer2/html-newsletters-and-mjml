@@ -1,0 +1,11 @@
+<mj-section>
+  {%- block column %}
+    <mj-column>
+      {%- block text %}
+        <mj-text>
+          Hello {{ username|default('Nemo') }}!
+        </mj-text>
+      {%- endblock text %}
+    </mj-column>
+  {%- endblock column %}
+</mj-section>

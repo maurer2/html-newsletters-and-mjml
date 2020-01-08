@@ -1,7 +1,12 @@
 import fs from 'fs-extra';
 import emoji from 'node-emoji';
-
 import mjml2html from 'mjml';
+import nunjucks from 'nunjucks';
+
+nunjucks.configure(`${__dirname}/partials/`, { autoescape: true });
+
+const template = nunjucks.render(`container.njk`, { username: 'Picatso' })
+const compiledTemplate = mjml2html(template);
 
 const createTemplate = (content) => {
   fs.writeFile(`${__dirname}/template.html`, content.toString())
@@ -12,21 +17,5 @@ const createTemplate = (content) => {
     console.log(emoji.get(':warning:'), error)
   })
 }
-
-const container = `
-  <mjml>
-    <mj-body>
-      <mj-section>
-        <mj-column>
-          <mj-text>
-            Hello Name
-          </mj-text>
-        </mj-column>
-      </mj-section>
-    </mj-body>
-  </mjml>
-`;
-
-const compiledTemplate = mjml2html(container);
 
 createTemplate(compiledTemplate.html)
