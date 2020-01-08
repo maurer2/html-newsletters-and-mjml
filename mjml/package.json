@@ -11,7 +11,8 @@
     "open:server": "live-server ./ --open='./dist/'",
     "test": "jest",
     "compile": "mjml -stdout -i",
-    "concat": "node -r esm ./src/scripts/concat.js"
+    "concat": "node -r esm ./src/scripts/concat.js",
+    "parameterize": "node -r esm ./src/scripts/parameterize.js"
   },
   "dependencies": {
     "@babel/preset-env": "^7.7.1",
