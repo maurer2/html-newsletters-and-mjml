@@ -12,11 +12,14 @@ const getName = () => {
 }
 
 const getCompiledTemplate = (name) => {
+  const mjmlConfig = {
+    beautify: true,
+  }
   const template = nunjucks.render(`base.njk`, { name })
-  const compiledTemplate = mjml2html(template);
+  const compiledTemplate = mjml2html(template, mjmlConfig);
 
   return compiledTemplate.html;
-};
+}
 
 const exportTemplate = (content) => {
   fs.writeFile(`${__dirname}/template.html`, content.toString())
