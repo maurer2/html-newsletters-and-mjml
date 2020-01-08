@@ -10,9 +10,13 @@
     "open": "opener './dist/template.html'",
     "open:server": "live-server ./ --open='./dist/'",
     "test": "jest",
-    "compile": "mjml -stdout -i"
+    "compile": "mjml -stdout -i",
+    "concat": "node -r esm ./src/scripts/concat.js",
+    "parameterize:test": "node -r esm ./src/scripts/parameterize.js Miezepeter",
+    "parameterize": "node -r esm ./src/scripts/parameterize.js"
   },
   "dependencies": {
+    "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.1",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
@@ -23,10 +27,13 @@
     "eslint": "^6.1.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.7.0",
+    "esm": "^3.2.25",
     "fs-extra": "^8.1.0",
     "jest": "^24.9.0",
     "live-server": "^1.2.1",
     "mjml": "^4.5.1",
+    "node-emoji": "^1.10.0",
+    "nunjucks": "^3.2.0",
     "opener": "^1.5.1",
     "yarpm": "^0.2.1"
   }
