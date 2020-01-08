@@ -12,6 +12,7 @@
     "test": "jest",
     "compile": "mjml -stdout -i",
     "concat": "node -r esm ./src/scripts/concat.js",
+    "parameterize:test": "node -r esm ./src/scripts/parameterize.js Miezepeter",
     "parameterize": "node -r esm ./src/scripts/parameterize.js"
   },
   "dependencies": {
