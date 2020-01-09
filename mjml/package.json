@@ -3,7 +3,7 @@
   "private": true,
   "author": "Martin",
   "scripts": {
-    "build": "mjml './src/*.mjml' --output './dist/'",
+    "build": "mjml './src/*.mjml' --config.beautify --output './dist/'",
     "build:open": "yarpm run build && yarpm run open",
     "watch": "mjml --watch './src/*.mjml' --output './dist'",
     "validate": "mjml './src/template.mjml' --config.validationLevel",
