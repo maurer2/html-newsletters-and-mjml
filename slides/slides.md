@@ -21,6 +21,16 @@
 * Use conditional commands like `<!--[if mso]>` to target Outlook
 * Font-tags, center-tags, spacer.gifs etc. are not necessary anymore
 
+---
+
+## Example
+
+```
+  template-ticketyboo.html
+```
+
+---
+
 ## Common Email clients
 
 ---
@@ -58,7 +68,7 @@
 
 ---
 
-### Mail (Apple)
+### Apple Mail
 
 * Very good support due to Webkit rendering engine
 * Dark mode is not applied to HTML emails automatically
@@ -69,9 +79,9 @@
 
 ### Statistics
 
-  * 4 of 5 used email clients are either from Apple or Google (Apple Mail and Gmail)
-  * Standalone Outlook much more popular than Outlook.com
-  * https://www.kevinmandeville.com/blog/email-client-market-share-trends-2018
+* 4 of 5 used email clients are either from Apple or Google (Apple Mail and Gmail)
+* Standalone Outlook much more popular than Outlook.com
+* https://www.kevinmandeville.com/blog/email-client-market-share-trends-2018
 
 ---
 
@@ -80,38 +90,37 @@
 ---
 
 ### CSS-Inliner
-  * Convert embedded styles into inline styles
-  * Usually applied before deployment
-  * Circumvent issues with lack of support of embedded and external styles
-  * Popular tools: Premailer, PutsMail, MailChimp Inliner
+
+* Convert style-tags to inline styles
+* No support for media queries
+* Usually applied before deployment
+* Circumvent issues of lack of support of embedded or external styles
+* Popular tools: Premailer, PutsMail, MailChimp Inliner
 
 ---
 
 ### Sending tools
-  * Can be used to send the unmodified html source code to email addresses
-  * Usually require email verification to avoid abuse
-  * Some services provide APIs for automated testing
-  * Popular tools: MailGun, SendGrid
+
+* Can be used to send the unmodified html source code to email addresses
+* Usually require email verification to avoid abuse
+* Some services provide APIs for automated testing
+* Popular tools: MailGun, SendGrid
 
 ---
 
-### Frameworks & Templates
-  * MJML
-  * Foundation for Emails 2 (formerly Zurb Ink)
-  * Cerberus
-  * Blueprints by Mailchimp (outdated)
+### Frameworks & Boilerplate templates
 
----
-
-### Testing
-  * Litmus Email
-  * Email on Acid
+* MJML
+* Foundation for Emails 2 (formerly Zurb Ink)
+* Cerberus
+* Blueprints by Mailchimp (outdated)
 
 ---
 
 ### Testing
-  * Litmus Email
-  * Email on Acid
+
+* Litmus Email ($99)
+* Email on Acid ($44)
 
 ---
 
@@ -120,66 +129,54 @@
 ---
 
 ### Basics
-  * Open source framework for HTML Emails
-  * Uses `Mailjet Markup Language` DSL
-  * Tries to simplify and abstract HTML Email authoring
-  * Provides quality of live improvements like watch tasks and linter
-  * Comes with common modules/components like columns, hero images, social-sharing etc.
-  * Supports creation of custom components
-  * Supports responsive email
+
+* Open source framework for responsive HTML mails
+* First release in January 2016
+* Uses `Mailjet Markup Language` DSL
+* Comes with common components out of the box
+* Supports creation of custom components
+* Used by The New York Times and Ryan Air
 
 ---
 
-### Technical stuff
-  * Current version 4 is a complete rewrite in vanillaJS
-  * Version 3 was based on a heavily modified version of React
-  * Syntax plugins for common editors like VSCode
-  * Is supported by module bundlers like Webpack and task runners like Gulp 
-  * Can be integrated in a React app
-  * Can be run standalone via npx
-  * CLI plugin
+### Technical details
+
+* Version 4 was rewritten in vanillaJS
+* Syntax plugins for common editors like VSCode
+* Supported by module bundlers like Webpack and task runners like Gulp
+* Provides quality of live improvements like watch tasks and linter
+* Can be used with React and template engines
+* Can be run standalone via npx
 
 ---
 
 ### Advantages
-  * Abstracts most of the cross browser issues
-  * Gives errors about incorrect usage at compile time
-  * Allows splitting up into partials/components
-  * MJML DSL is fairly close to HTML
-  * Mobile first
-  * 
+
+* Fixes a lot of the common issues with render engines
+* Automatically inlines styles during compilation and adds Outlook specific overrides
+* Gives errors about incorrect usage at compile time
+* Allows splitting up into partials/components
+* MJML DSL is fairly close to HTML
+* Mobile first
 
 ---
 
 ### Disadvantages
-  * Parameterized generation requires additonal template language
-  * Imposes certain restrictions/limitation on email design (max 4 columns etc.)
-  * Outdated guides and tips that reference MJMl version 3 can be confusing
-  * No way to configure browser support
+
+* No support for variables, loops, template inheritance etc.
+* Requires use of template engines to enable parameterization
+* Imposes restrictions on email design
+* No way to configure render engine support
+* Outdated guides and tips that reference MJMl version 3 can be confusing
 
 ---
 
-### Hello MJML (source)
-```
-<mjml>
-  <mj-body background-color="red">
-    <mj-section>
-      <mj-column>
-        <mj-text>
-          Hello MJML
-        </mj-text>
-      </mj-column>
-    </mj-section>
-  </mj-body>
-</mjml>
-```
-
-### Hello MJML (compiled output)
-  * https://mjml.io/try-it-live/ByWRcxkTB
+### Building blocks
 
 ---
 
-### Building blocks - Body
+#### Building blocks - Body
+
 ```
 <mj-body>
   ...
@@ -192,7 +189,8 @@
 
 ---
 
-### Building blocks - Section
+#### Building blocks - Section
+
 ```
 <mj-section>
   ...
@@ -206,6 +204,7 @@
 ---
 
 ### Building blocks - Column
+
 ```
 <mj-column>
   ..
@@ -215,15 +214,14 @@
 * Similar to columns in grid systems like Bootstrap or Foundation
 * Must be a direct child of a section
 * Cannot contain other columns or sections
-* Multiple sibling columns are okay
-* Fill up row by default, e.g. 1 column 100% width, 2 columns 50% width etc.
+* Fill up row automatically, e.g. 1 column 100% width, 2 columns 50% width etc.
 * Columns become stacked on small viewports
 
 ---
 
-### Creating a grid layout
+### Creating a basic grid layout
+
 ```
-...
   <mj-section>
     <mj-column>
       Full-width column
@@ -241,22 +239,56 @@
 
 ---
 
+### Using images
+
+```
+<mj-image
+  width="250px"
+  src="image.png"
+  padding="0"
+  align="center"
+  href="#"
+  fluid-on-mobile
+/>
+```
+
+* Images can be used as links
+* SrcSet is supported
+* Can be full width on mobile and fixed with on desktop
+
+---
+
 ### Styling elements - Inline styles
+
 ```
 <mj-text color="red" font-size="16px">
   Cat
 </mj-text>
 ```
-* Not reusable 
-* Override global styles
+
+* Not reusable
+* Inline style override global styles
 * Make changes more difficult
 
 ---
 
+### Other elements
+
+* Buttons
+* Hero component
+* Media elements
+* Navbar
+* Accordion
+* Social icons
+* Data tables
+
+---
+
 ### Styling elements - Global styles
+
 ```
 <mj-attributes>
-  <mj-class name="font-size-base" font-size="20px" />
+  <mj-class name="font-size-base" font-size="16px" />
   <mj-class name="color-primary" color="red" />
 </mj-attributes>
 
@@ -268,12 +300,39 @@
 * Reusable 
 * Easily changeable
 * Get inlined during compilation
+* Can be overridden by inline styles
+
+---
+
+### Working with partials
+
+```
+// base
+<mj-body background-color="#4e4096">
+  <mj-include path="./child-component.mjml" />
+</mj-body>
+
+
+// child-component.mjml
+<mjml>
+  <mj-body>
+    <mj-text>
+      Hello
+    </mj-text>
+  </mj-body>
+</mjml>
+```
+
+* Watch task also works on partials since v4
+* No way to pass variables to a partial
 
 ---
 
 ### Parameterize MJML templates
 
-* Use template engine like handlebars, twig etc.
-* Generate mjml via template engine and then compile to html
-* Personalisation happens in step 1
+* Not possible out of the box
+* Can be achieved via template engine like handlebars, twig etc.
+* Generate MJML markup via template engine and then compile to html
+* Parameters are handled by template engine when MJML markup is generated
 
+---
