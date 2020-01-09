@@ -4,85 +4,66 @@
 
 ## Why is creating HTML newsletters so weird?
 
-* Multitude of render engines
-* Varying degree of capabilities
+* Many render engines with varying degree of capabilities
 * Rarely updated for new requirements
 * Webmailer remove a lot of styles
 
 ---
 
-## Milestones
+## Basic layout techniques
 
-  * Outlook 2007 switches to Word Rendering engine
-  * GMail allows embedded CSS in late 2016
-
----
-
-## Classic layout techniques
-
-  * Use deeply nested tables for all layouting
-  * Avoid using CSS (especially margin and padding)
-  * Avoid empty table cells by adding &nbsp;
-  * Use font tags for font styling
-  * Use html attributes like width, align and valign et.c for positioning
-  * Don't use body tag for styling e.g. background color
-  * Use br or or spacer.gifs with width and height values for fine tuning layouts
-
----
-
-## Modern layout techniques
-  * Still use layout tables
-  * Use inline CSS for general styling and embedded styles for responsive stuff
-  * Avoid html-attributes like cellpadding or cellspacing
-  * Avoid horizontal padding and width on the same element
-  * Use conditional commands like `<!--[if mso]>` to target Outlook
-
----
-
-## Responsiveness
-  * Making layout tables responsive
-
----
+* Use deeply nested tables for all layouts
+* Use inline CSS for general styling and embedded styles for responsive overrides
+* Don't use body tag for styling e.g. background color
+* Avoid html-attributes like cellpadding or cellspacing
+* Avoid padding and width/height value on the same element
+* Avoid floats or modern layout methods
+* Use conditional commands like `<!--[if mso]>` to target Outlook
+* Font-tags, center-tags, spacer.gifs etc. are not necessary anymore
 
 ## Common Email clients
 
 ---
 
 ### Outlook (Standalone)
-  * Since Outlook 2007 Word is used as render engine
-  * Engine hasn't been updated since then
-  * No support for background images
-  * Support for margin, padding, width and height spotty (due to broken box model implementation)
-  * No media queries or other modern CSS-features
-  * Outlook for Mac uses Webkit
+
+* Since Outlook 2007 Word is used as render engine
+* Engine hasn't been updated since then
+* Support for margin, padding, width and height spotty
+* No media queries or other modern CSS-features
+* No support for background images
+* Outlook for Mac uses Webkit
 
 ---
 
 ### Outlook.com
-  * Didn't support CSS margins for a while
-  * Background images don't repeat
-  * Links need to be prefixed with protocol (HTTP/HTTPS)
-  * Media queries support was supposed to be introduced in 2019
-  * Can be targeted in CSS via `[owa] .test {}`
+
+* Uses render engine of browser
+* Didn't support CSS margins for a while
+* Background images don't repeat
+* Media queries support was supposed to be introduced in 2019
+* Can be targeted in CSS via `[owa] .test {}`
 
 ---
 
 ### Gmail
-  * Major differences between browser-based Gmail, Android app and Gmail app for non-Google accounts
-  * Messages larger than 1024kb are clipped
-  * Support of embedded styles in the head since late 2016
-  * No support for style-element in the body
-  * Gmail ignores style-elements larger than 8192 characters
-  * Gmail removes style-elements that contain any error
-  * Numbers and URLS are automatically converted to links
+
+* Support of style-tags in the head since late 2016
+* No support for style-element in the body
+* Messages larger than 1024kb are clipped
+* Doesn't support attribute selectors
+* Ignores style-elements larger than 16,384 characters (used to be 8,192)
+* Removes entire style-tag when encountering an error
+* Numbers and URLS are automatically converted to links
 
 ---
 
 ### Mail (Apple)
-  * Very good support due to Webkit rendering engine
-  * Dark mode is not applied to HTML emails automatically
-  * Media queries can be used to add support for dark mode `@media (prefers-color-scheme: dark)`
-  * Numbers and URLS are automatically converted to links (can be suppressed)
+
+* Very good support due to Webkit rendering engine
+* Dark mode is not applied to HTML emails automatically
+* Media queries can be used to add support for dark mode `@media (prefers-color-scheme: dark)`
+* Numbers and URLS are automatically converted to links
 
 ---
 
