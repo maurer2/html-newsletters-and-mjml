@@ -2,6 +2,15 @@
 
 ---
 
+## Why is creating HTML newsletters so weird?
+
+* Multitude of render engines
+* Varying degree of capabilities
+* Rarely updated for new requirements
+* Webmailer remove a lot of styles
+
+---
+
 ## Milestones
 
   * Outlook 2007 switches to Word Rendering engine
@@ -143,10 +152,11 @@
 ### Technical stuff
   * Current version 4 is a complete rewrite in vanillaJS
   * Version 3 was based on a heavily modified version of React
-  * Syntax plugins for common editors like VSCode, Atom and Webstorm (?)
+  * Syntax plugins for common editors like VSCode
   * Is supported by module bundlers like Webpack and task runners like Gulp 
   * Can be integrated in a React app
   * Can be run standalone via npx
+  * CLI plugin
 
 ---
 
@@ -155,14 +165,16 @@
   * Gives errors about incorrect usage at compile time
   * Allows splitting up into partials/components
   * MJML DSL is fairly close to HTML
+  * Mobile first
+  * 
 
 ---
 
 ### Disadvantages
-  * Parameterized generation is not very straightforward (https://github.com/mjmlio/mjml/issues/451)
-  * Imposes certain restrictions/limitation on email design (4 columns in a section etc.)
-  * Rigid markup 
+  * Parameterized generation requires additonal template language
+  * Imposes certain restrictions/limitation on email design (max 4 columns etc.)
   * Outdated guides and tips that reference MJMl version 3 can be confusing
+  * No way to configure browser support
 
 ---
 
@@ -246,6 +258,8 @@
   </mj-section>
 ```
 
+---
+
 ### Styling elements - Inline styles
 ```
 <mj-text color="red" font-size="16px">
@@ -255,6 +269,8 @@
 * Not reusable 
 * Override global styles
 * Make changes more difficult
+
+---
 
 ### Styling elements - Global styles
 ```
@@ -275,4 +291,8 @@
 ---
 
 ### Parameterize MJML templates
-https://github.com/mjmlio/mjml/issues/1630
+
+* Use template engine like handlebars, twig etc.
+* Generate mjml via template engine and then compile to html
+* Personalisation happens in step 1
+
