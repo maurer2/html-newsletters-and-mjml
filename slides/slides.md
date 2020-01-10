@@ -4,22 +4,22 @@
 
 ## Why is creating HTML newsletters so weird?
 
-* Many render engines with varying degree of capabilities
-* Rarely updated for new requirements
-* Webmailer remove a lot of styles
+* Many render engines with different capabilities
+* Rarely get updated for new requirements
+* Webmailer are picky and remove a lot of styles
 
 ---
 
 ## Basic layout techniques
 
 * Use deeply nested tables for all layouts
-* Use inline CSS for general styling and embedded styles for responsive overrides
-* Don't use body tag for styling e.g. background color
+* Use inline CSS for general styling and style-tags for responsive overrides
+* Don't use body tag for styling
 * Avoid html-attributes like cellpadding or cellspacing
-* Avoid padding and width/height value on the same element
+* Avoid padding and width/height on the same element
 * Avoid floats or modern layout methods
-* Use conditional commands like `<!--[if mso]>` to target Outlook
-* Font-tags, center-tags, spacer.gifs etc. are not necessary anymore
+* Use conditional commands to target Outlook
+* Font-tags, center-tags are not necessary anymore
 
 ---
 
@@ -35,7 +35,7 @@
 
 ---
 
-### Outlook (Standalone)
+### Outlook
 
 * Since Outlook 2007 Word is used as render engine
 * Engine hasn't been updated since then
@@ -64,7 +64,7 @@
 * Doesn't support attribute selectors
 * Ignores style-elements larger than 16,384 characters (used to be 8,192)
 * Removes entire style-tag when encountering an error
-* Numbers and URLS are automatically converted to links
+* Numbers and URLs are automatically converted to links
 
 ---
 
@@ -73,7 +73,7 @@
 * Very good support due to Webkit rendering engine
 * Dark mode is not applied to HTML emails automatically
 * Media queries can be used to add support for dark mode `@media (prefers-color-scheme: dark)`
-* Numbers and URLS are automatically converted to links
+* Numbers and URLs are automatically converted to links
 
 ---
 
@@ -113,14 +113,14 @@
 * MJML
 * Foundation for Emails 2 (formerly Zurb Ink)
 * Cerberus
-* Blueprints by Mailchimp (outdated)
+* Blueprints by Mailchimp
 
 ---
 
 ### Testing
 
-* Litmus Email ($99)
-* Email on Acid ($44)
+* Litmus Email ($99 per month)
+* Email on Acid ($44 per month)
 
 ---
 
@@ -133,7 +133,7 @@
 * Open source framework for responsive HTML mails
 * First release in January 2016
 * Uses `Mailjet Markup Language` DSL
-* Comes with common components out of the box
+* Comes with library of components out of the box
 * Supports creation of custom components
 * Used by The New York Times and Ryan Air
 
@@ -142,11 +142,11 @@
 ### Technical details
 
 * Version 4 was rewritten in vanillaJS
-* Syntax plugins for common editors like VSCode
+* Plugins for common editors like VSCode
 * Supported by module bundlers like Webpack and task runners like Gulp
 * Provides quality of live improvements like watch tasks and linter
 * Can be used with React and template engines
-* Can be run standalone via npx
+* Can be used standalone via npx
 
 ---
 
@@ -212,7 +212,7 @@
 ```
 
 * Similar to columns in grid systems like Bootstrap or Foundation
-* Must be a direct child of a section
+* Must be a direct children of sections
 * Cannot contain other columns or sections
 * Fill up row automatically, e.g. 1 column 100% width, 2 columns 50% width etc.
 * Columns become stacked on small viewports
@@ -251,10 +251,10 @@
   fluid-on-mobile
 />
 ```
-
+* Helper to deal with images
 * Images can be used as links
 * SrcSet is supported
-* Can be full width on mobile and fixed with on desktop
+* Can be full width on mobile and fixed width on desktop
 
 ---
 
@@ -269,18 +269,6 @@
 * Not reusable
 * Inline style override global styles
 * Make changes more difficult
-
----
-
-### Other elements
-
-* Buttons
-* Hero component
-* Media elements
-* Navbar
-* Accordion
-* Social icons
-* Data tables
 
 ---
 
@@ -301,6 +289,18 @@
 * Easily changeable
 * Get inlined during compilation
 * Can be overridden by inline styles
+
+---
+
+### Other elements
+
+* Buttons
+* Hero component
+* Media elements
+* Navbar
+* Accordion
+* Social icons
+* Data tables
 
 ---
 
@@ -331,8 +331,10 @@
 ### Parameterize MJML templates
 
 * Not possible out of the box
-* Can be achieved via template engine like handlebars, twig etc.
-* Generate MJML markup via template engine and then compile to html
+* Can be achieved via template engines like handlebars, twig etc.
+* Generate MJML markup via template engine and then compile to HTML
 * Parameters are handled by template engine when MJML markup is generated
+
+---
 
 ---

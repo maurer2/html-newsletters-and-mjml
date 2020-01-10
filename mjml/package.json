@@ -5,7 +5,7 @@
   "scripts": {
     "build": "mjml './src/*.mjml' --config.beautify --output './dist/'",
     "build:open": "yarpm run build && yarpm run open",
-    "watch": "mjml --watch './src/*.mjml' --output './dist'",
+    "watch": "mjml --watch './src/*.mjml' --config.beautify --output './dist'",
     "validate": "mjml './src/template.mjml' --config.validationLevel",
     "open": "opener './dist/template.html'",
     "open:server": "live-server ./ --open='./dist/'",
