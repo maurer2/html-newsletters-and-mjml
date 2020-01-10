@@ -13,7 +13,7 @@ const puppeteer = require('puppeteer');
     `,
   });
   await page.pdf({
-    path: 'presentation.pdf',
+    path: '../presentation.pdf',
     format: 'A4',
     landscape: true,
     printBackground: true,
