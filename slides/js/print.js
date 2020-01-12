@@ -1,9 +1,14 @@
-const puppeteer = require('puppeteer');
+import puppeteer from 'puppeteer';
+import settings from './print.json';
+
+const [, , pageURL] = process.argv;
 
 (async () => {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
-  await page.goto('http://localhost:8000/?print-pdf', { waitUntil: 'networkidle2' });
+  await page
+    .goto(`${pageURL}/?print-pdf`, { waitUntil: 'networkidle2' })
+    .catch((error) => console.error('error:', error));
   await page.emulateMedia('screen');
   await page.addStyleTag({
     content: `
@@ -14,19 +19,7 @@ const puppeteer = require('puppeteer');
   });
   await page.pdf({
     path: '../presentation.pdf',
-    format: 'A4',
-    landscape: true,
-    printBackground: true,
-    margin: {
-      top: 0,
-      right: 0,
-      bottom: 0,
-      left: 0,
-    },
-    preferCSSPageSize: true,
-    // width: '297mm',
-    // height: '210mm',
-    displayHeaderFooter: true,
+    ...settings,
   });
   await browser.close();
 })();
