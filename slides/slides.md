@@ -135,7 +135,7 @@
 * Uses `Mailjet Markup Language` DSL
 * Comes with library of components out of the box
 * Supports creation of custom components
-* Used by The New York Times and Ryan Air
+* Used by The New York Times and Ryanair (as of 2018)
 
 ---
 
@@ -183,7 +183,7 @@
 </mj-body>
 ```
 
-* Acts similar to body-element in HTML
+* Acts similar to body-tag in HTML
 * Sets background color and max-width of email
 * Used to be called container in MJML 3
 
@@ -215,7 +215,7 @@
 * Must be a direct children of sections
 * Cannot contain other columns or sections
 * Fill up row automatically, e.g. 1 column 100% width, 2 columns 50% width etc.
-* Columns become stacked on small viewports
+* Columns become stacked on smaller viewports
 
 ---
 
@@ -285,7 +285,7 @@
 </mj-text>
 ```
 
-* Reusable 
+* Reusable
 * Easily changeable
 * Get inlined during compilation
 * Can be overridden by inline styles
@@ -334,7 +334,5 @@
 * Can be achieved via template engines like handlebars, twig etc.
 * Generate MJML markup via template engine and then compile to HTML
 * Parameters are handled by template engine when MJML markup is generated
-
----
 
 ---
