@@ -120,7 +120,8 @@
 ### Testing
 
 * Litmus Email ($99 per month)
-* Email on Acid ($44 per month)
+* Email on Acid ($86 per month)
+* Testi@ ($20 per month)
 
 ---
 
