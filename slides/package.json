@@ -6,7 +6,8 @@
     "test": "grunt test",
     "start": "grunt serve",
     "build": "grunt",
-    "create-pdf": "node -r esm ./js/print.js http://localhost:8000"
+    "create-pdf": "node -r esm ./js/print.js http://localhost:8000",
+    "create-pdf2": "node -r esm ./js/print.js http://localhost:8000"
   },
   "devDependencies": {
     "express": "^4.16.2",
